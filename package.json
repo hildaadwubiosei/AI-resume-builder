@@ -1,0 +1,39 @@
+{
+  "name": "ai-resume-builder",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi",
+    "deploy": "strapi deploy"
+  },
+  "dependencies": {
+    "@strapi/plugin-cloud": "5.0.0-rc.12",
+    "@strapi/plugin-users-permissions": "5.0.0-rc.12",
+    "@strapi/strapi": "5.0.0-rc.12",
+    "glob": "^11.0.0",
+    "lru-cache": "^11.0.0",
+    "pg": "8.8.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-router-dom": "^6.0.0",
+    "resolve-url": "^0.2.1",
+    "source-map-url": "^0.4.1",
+    "styled-components": "^6.0.0",
+    "urix": "^0.1.0"
+  },
+  "author": {
+    "name": "A Strapi developer"
+  },
+  "strapi": {
+    "uuid": "a45e5bf3-6a80-44b9-8c42-6865de02c1cf"
+  },
+  "engines": {
+    "node": ">=18.0.0 <=20.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}
