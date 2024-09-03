@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "compilerOptions": {
     "moduleResolution": "nodenext",
     "target": "ES2021",
@@ -6,3 +7,17 @@
     "allowJs": true
   }
 }
+=======
+    "compilerOptions": {
+      // ...
+      "baseUrl": ".",
+      "paths": {
+        "@/*": [
+          "./src/*"
+        ]
+      }
+      // ...
+    }
+  }
+  
+>>>>>>> 7ae9481cd3e66e1def0959223ff930758b229063
