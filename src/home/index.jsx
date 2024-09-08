@@ -6,6 +6,7 @@ function Home() {
   return (
     <div>
       <Header/>
+      <UserButton/>
       landing screen
     </div>
   )

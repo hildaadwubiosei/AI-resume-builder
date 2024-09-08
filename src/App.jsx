@@ -4,16 +4,17 @@ import { Button } from "./components/ui/button";
 import { Outlet, Navigate } from "react-router-dom";
 import Header from "./components/custom/Header";
 import { useUser } from "@clerk/clerk-react";
+import { Toaster } from "react-hot-toast";
 
 function App() {
   const [count, setCount] = useState(0);
   const { user, isloaded, isSignedIn } = useUser();
 
-  if (!isloaded) {
-    return <div>Loading...</div>;
-  }
+  // if (!isloaded) {
+  //   return <div>Loading...</div>;
+  // }
 
-  if (!isSignedIn) {
+  if (!isSignedIn && isloaded) {
     return <Navigate to={"/auth/sign-in"} />;
   }
 
@@ -21,6 +22,7 @@ function App() {
     <>
       <Header />
       <Outlet />
+      <Toaster position="top-right" />
     </>
   );
 }
