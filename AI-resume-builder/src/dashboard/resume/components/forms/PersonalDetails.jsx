@@ -65,7 +65,9 @@ function PersonalDetails({ enableNext }) {
             />
           </div>
           <div>
-            <label className="text-sm">Last Name</label>
+            <label className="text-sm">Last Name
+            
+            </label>
             <Input
               name="lastName"
               onChange={handleInputChange}
